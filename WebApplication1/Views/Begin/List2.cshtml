@@ -1,0 +1,22 @@
+﻿@model IEnumerable<WebApplication1.Models.Company>
+
+@{
+    ViewBag.Title = "List2";
+}
+
+<h2>List2</h2>
+<table class="table">
+    <tr>
+        <th>Name</th>
+        <th>Memo</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Memo</td>
+        </tr>
+    }
+
+</table>

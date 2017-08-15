@@ -9,5 +9,6 @@ namespace WebApplication1.Models
     public class MvcBasicContext : DbContext
     {
         public DbSet<Member> Members { get; set; }
+        public DbSet<Company> Companies { get; set; }
     }
 }

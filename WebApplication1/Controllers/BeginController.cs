@@ -20,6 +20,15 @@ namespace WebApplication1.Controllers
             return View(db.Members);
         }
 
+        /// <summary>
+        /// Listを返す
+        /// </summary>
+        /// <returns></returns>
+        public ActionResult List2()
+        {
+            return View(db.Companies);
+        }
+
         // GET: Begin
         public ActionResult Index()
         {
